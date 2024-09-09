@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: my_raw_sales_data  # You can name this as you like
+    database: home_assignments  # The Snowflake database name
+    schema: PUBLIC  # The schema where raw_sales_data resides
+    tables:
+      - name: RAW_SALES_DATA
+

@@ -1,0 +1,13 @@
+-- average_order_value_per_month_2023.sql
+
+SELECT
+  order_month AS month,
+  AVG(total_sales_amount) AS average_order_value
+FROM
+  transformed_sales_data
+WHERE
+  order_year = 2023
+GROUP BY
+  month
+ORDER BY
+  month;
